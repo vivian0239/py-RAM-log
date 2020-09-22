@@ -37,7 +37,7 @@ def main():
         RAM_total = str(round(int(RAM_stats[0]) / 1000,1))
         RAM_used = str(round(int(RAM_stats[1]) / 1000,1)) 
         RAM_free = str(round(int(RAM_stats[2]) / 1000,1))
-        RAM_perc = str(round(int(RAM_stats[1])/int(RAM_stats[0]) * 100, 2))
+        RAM_perc = str(round(float(RAM_stats[1])/float(RAM_stats[0]) * 100, 2))
         now = str(datetime.now())
         
         print('')
